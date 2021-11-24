@@ -89,15 +89,15 @@ window.addEventListener("load", () =>{
     
         ///switch for chosen y coordinates gradient
         let choseY;
-        switch (Math.ceil(((e.clientY) / 0.4/ 100))){
+        switch (Math.round(((e.clientY) / 0.4/ 100))){
        
-               case 1: choseY = 80; break;
+               case 1: choseY = 40; break;
                case 2: choseY = 80; break;
-               case 3: choseY = 160; break;
+               case 3: choseY = 120; break;
                case 4: choseY = 160; break;
-               case 5: choseY = 240; break;
+               case 5: choseY = 200; break;
                case 6: choseY = 240; break;
-               case 7: choseY = 320; break;
+               case 7: choseY = 280; break;
                case 8: choseY = 320; break;
                case 9: choseY = 360; break;
                case 10: choseY = 360; break;
@@ -105,20 +105,19 @@ window.addEventListener("load", () =>{
     
     //////////switch for chosen x coordinates gradient
         let choseX;
-        switch (Math.ceil(((e.clientX) / 0.4 / 100))){
+        switch (Math.round(((e.clientX) / 0.4 / 100))){
        
-               case 1: choseX = 80; break;
+               case 1: choseX = 40; break;
                case 2: choseX = 80; break;
-               case 3: choseX = 160; break;
+               case 3: choseX = 120; break;
                case 4: choseX = 160; break;
-               case 5: choseX = 240; break;
+               case 5: choseX = 200; break;
                case 6: choseX = 240; break;
-               case 7: choseX = 320; break;
+               case 7: choseX = 260; break;
                case 8: choseX = 320; break;
                case 9: choseX = 360; break;
                case 10: choseX = 360; break;
             };
-    
         ctx.beginPath();
         ctx.arc(choseX, choseY, sizeRadius, 0, Math.PI*2);
         ctx.fillStyle = color;
