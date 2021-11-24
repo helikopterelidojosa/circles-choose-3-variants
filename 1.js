@@ -89,7 +89,7 @@ function drawCircle(e){
 
     ///switch for chosen y coordinates gradient
     let choseY;
-    switch (Math.ceil(((e.clientY) / 0.4/ 100))){
+    switch (Math.round(((e.clientY) / 0.4/ 100))){
    
            case 1: choseY = 80; break;
            case 2: choseY = 80; break;
@@ -105,7 +105,7 @@ function drawCircle(e){
 
 //////////switch for chosen x coordinates gradient
     let choseX;
-    switch (Math.ceil(((e.clientX) / 0.4 / 100))){
+    switch (Math.round(((e.clientX) / 0.4 / 100))){
    
            case 1: choseX = 80; break;
            case 2: choseX = 80; break;
